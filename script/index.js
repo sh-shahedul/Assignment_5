@@ -21,13 +21,8 @@
             coinNumber = coinNumber-20;
             getElement('coin').innerText = coinNumber 
             alert( '📞'+'calling'+' '+ serviceName +' ' + serviceNumber +'...')
-        }
-        else if(coinNumber<=0){
-            alert('❌ you dont have enough coin ! You need at least twenty coin to make a call')
-        }
-        else{
-           return
-        }
+
+            
         // history 
            const historyContainer = getElement('history-container')
            const date = new Date().toLocaleTimeString()
@@ -40,8 +35,14 @@
                   </div>
                   <p class="font-semibold">${date}</p>
                   </div>         
-                 ` 
-           historyContainer.appendChild(history)
+                  ` 
+                 historyContainer.appendChild(history)
+           }
+        else if(coinNumber<=0){
+            alert('❌ you dont have enough coin ! You need at least twenty coin to make a call')
+        }
+       
+                   
            }
           //copy
     if(e.target.className.includes('copy-button')){
@@ -51,7 +52,7 @@
           if (navigator.clipboard) {
           navigator.clipboard.writeText(cellNumber);
           }
-          alert('number is copied'+" "+ cellNumber)
+          alert('Number is copied :'+" "+ cellNumber)
           const copyCount =  Number(getElement('copy-count').innerText)
           const totalCopy = copyCount + 1
           getElement('copy-count').innerText = totalCopy
