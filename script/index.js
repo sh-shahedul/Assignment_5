@@ -40,6 +40,8 @@
            }
         else if(coinNumber<=0){
             alert('❌ you dont have enough coin ! You need at least twenty coin to make a call')
+        }else{
+         return
         }
        
                    
@@ -47,8 +49,7 @@
           //copy
     if(e.target.className.includes('copy-button')){
           const number = e.target
-          const cellNumber = number.parentNode.parentNode.children[3].innerText
-          console.log(cellNumber)
+          const cellNumber = number.parentNode.parentNode.children[3].innerText        
           if (navigator.clipboard) {
           navigator.clipboard.writeText(cellNumber);
           }
