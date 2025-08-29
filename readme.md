@@ -1,7 +1,7 @@
 
 **Question (1):  What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?**
 
-## Ans :
+**Ans:**
 
 **getElementById()**
 
@@ -21,22 +21,29 @@
 - Finds all elements that match a CSS selector.
 - Return nodeList.
 
-
+##
 
 **Question (2): How do you **create and insert a new element into the DOM**?**
-  ## Ans:
+
+  **Ans:**
+  
  To create and insert a new element into the DOM, At first use document.createElement() to make the element. Then add text or attributes and lastly  insert it into the page using appendChild()   
 
-
+##
     
 **Question(3): What is **Event Bubbling** and how does it work?**
-## Ans : 
+
+**Ans:** 
+
  Event Bubbling is when an event on a child element first runs on that element and then propagates up to its parent elements.
  When an event starts on the element that was clicked and then going up through its parent elements to the top of the page.
+
+##
+
     
 **Question(4):  What is **Event Delegation** in JavaScript? Why is it useful?**
 
-## Ans : 
+**Ans:** 
 
 Event delegation is a powerful pattern in JavaScript that improves both the performance and maintainability of our code, especially when dealing with dynamic content or a large number of elements.
 
@@ -46,9 +53,13 @@ Event delegation is a powerful pattern in JavaScript that improves both the perf
 - works for Dynamic elements.
 - Better performence.
 
+
+##
+
+
 **Queastion(5): What is the difference between **preventDefault() and stopPropagation()** methods?**
 
-## Ans :
+**Ans:**
 
 **preventDefault()** 
 
